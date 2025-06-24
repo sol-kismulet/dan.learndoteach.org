@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dan.learndoteach.org</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: black url('meditation_for_shae_dans_cello.png') no-repeat center center;
+      background-size: cover;
+      overflow: hidden;
+    }
+    .stars {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.2) 0%, transparent 70%), transparent;
+      animation: shimmer 8s infinite alternate ease-in-out;
+      pointer-events: none;
+    }
+    @keyframes shimmer {
+      0% { opacity: 0.1; }
+      100% { opacity: 0.4; }
+    }
+    audio {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <audio controls autoplay loop>
+    <source src="shae_meditation.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
